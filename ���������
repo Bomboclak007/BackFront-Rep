@@ -5,12 +5,10 @@ npm i
 npm install -D sass-embedded
 
 База данных
-npm init - y 
-
-npm init expo 
+npm init -y 
 
 npm i express
 
-npm pg
+npm i pg
 
-npm i corse
+npm i cors

@@ -1,0 +1,77 @@
+CREATE TABLE newsone (
+    titlemain VARCHAR NOT NULL,
+    news VARCHAR NOT NULL,
+    categoru VARCHAR,
+    publicationdata VARCHAR,
+    author VARCHAR,
+    "like" INTEGER,
+    repost VARCHAR,
+    img VARCHAR NOT NULL,
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY
+);
+
+
+
+
+INSERT INTO newsone
+    (titlemain, news, categoru, publicationdata, author, "like", repost, img)
+VALUES
+    (
+        'A Decisive Victory for Progressive Policies',
+        '-',
+        NULL,
+        NULL,
+        NULL,
+        2,
+        '60',
+        '\Image2.png'
+    ),
+    (
+        'Tech Giant Unveil Cutting-Edge AI Innovations',
+        '-',
+        'Technology',
+        NULL,
+        NULL,
+        6,
+        '92',
+        '\Image3.png'
+    ),
+    (
+        'COVID-19 Variants',
+        '-',
+        'Health',
+        NULL,
+        NULL,
+        10,
+        '124',
+        '\Image4.png'
+    ),
+    (
+        'Global Climate Summit Addresses Urgent Climate Action',
+        'World leaders gathered at the Global Climate Summit to discuss',
+        'Environment',
+        'October 10, 2023',
+        'Jane Smith',
+        14,
+        '204',
+        '\Image.png'
+    );
+
+
+
+
+
+INSERT INTO newsone
+    (titlemain, news, categoru, publicationdata, author, "like", repost, img)
+VALUES
+    ('A Decisive Victory for Progressive Policies', '-', NULL, NULL, NULL, 2, '60', '\Image2.png'),
+    ('Tech Giant Unveil Cutting-Edge AI Innovations', '-', 'Technology', NULL, NULL, 6, '92', '\Image3.png'),
+    ('COVID-19 Variants', '-', 'Health', NULL, NULL, 10, '124', '\Image4.png'),
+    ('Global Climate Summit Addresses Urgent Climate Action',
+     'World leaders gathered at the Global Climate Summit to discuss',
+     'Environment',
+     'October 10, 2023',
+     'Jane Smith',
+     14,
+     '204',
+     '\Image.png');

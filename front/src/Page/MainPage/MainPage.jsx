@@ -22,21 +22,45 @@ export default function MainPage() {
 return (
 <>
 <main>
-    {/* <div>
-        {data.map(item =>(
-            <div key={item.id}>
-                <p>{item.categoru}</p>
-                <img src={item.img} alt="" />
-            </div>
-        ))}
-    </div> */}
-    <div>
+
+    <div className={classes.container}>
         {data2 && (
-        <div key={data2.id}>
-            <p>{data2.titlemain}</p>
+        <div key={data2.id} className={classes.TwoDiv}>
+           <div className={classes.left}>
             <img src={data2.img} alt="" />
+           </div>
+           <div className={classes.right}>
+                <div className={classes.TwoText}>
+                    <p>{data2.titlemain}</p>
+                    <p>{data2.news}</p>
+                </div>
+                <div className={classes.MetaInfo}>
+                    <p>Category <span>{data2.categoru}</span></p>
+                    <p>Publication Date <span>{data2.publicationdata}</span></p>
+                    <p>Author <br /><span>{data2.author}</span></p>
+                </div>
+                <div className={classes.To_Meta_Info}>
+                    <div>
+                        <p><img src={Photo.like} alt="" />{data2.like}K</p>
+                        <p><img src={Photo.rep} alt="" />{data2.repost}</p>
+                    </div>
+                    <div>
+                        <button>Read More</button>
+                    </div>
+                </div>
+           </div>
         </div>
     )}
+        <div className={classes.DivThree}>
+        {data.map(item =>(
+            <div key={item.id}>
+                <img src={item.img} alt="" />
+                <p>{item.titlemain}</p>
+                <p>{item.categoru}</p>
+                
+            </div>
+        ))}
+    </div>
     </div>
         
 </main>
