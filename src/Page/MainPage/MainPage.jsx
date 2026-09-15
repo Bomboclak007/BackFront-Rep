@@ -1,0 +1,69 @@
+import { useState } from "react"
+import classes from './MainPage.module.scss'
+import { Photo } from "../../../file"
+import { Link, useFetcher } from 'react-router-dom'
+import { use } from "react"
+import { useEffect } from "react"
+import axios from "axios"
+
+export default function MainPage() {
+    const[data,setData] = useState([])
+    const[data2,setData2] = useState(null)
+    useEffect(() => {
+        fetch("http://localhost:3000/api/main")
+        .then(res => res.json())
+        .then(data => setData(data))
+    },[])
+    useEffect(() => {
+        fetch("http://localhost:3000/api/main2")
+        .then(res => res.json())
+        .then(data2 => setData2(data2))
+    },[])
+return (
+<>
+<main>
+
+    <div className={classes.container}>
+        {data2 && (
+        <div key={data2.id} className={classes.TwoDiv}>
+           <div className={classes.left}>
+            <img src={data2.img} alt="" />
+           </div>
+           <div className={classes.right}>
+                <div className={classes.TwoText}>
+                    <p>{data2.titlemain}</p>
+                    <p>{data2.news}</p>
+                </div>
+                <div className={classes.MetaInfo}>
+                    <p>Category <span>{data2.categoru}</span></p>
+                    <p>Publication Date <span>{data2.publicationdata}</span></p>
+                    <p>Author <br /><span>{data2.author}</span></p>
+                </div>
+                <div className={classes.To_Meta_Info}>
+                    <div>
+                        <p><img src={Photo.like} alt="" />{data2.like}K</p>
+                        <p><img src={Photo.rep} alt="" />{data2.repost}</p>
+                    </div>
+                    <div>
+                        <button>Read More</button>
+                    </div>
+                </div>
+           </div>
+        </div>
+    )}
+        <div className={classes.DivThree}>
+        {data.map(item =>(
+            <div key={item.id}>
+                <img src={item.img} alt="" />
+                <p>{item.titlemain}</p>
+                <p>{item.categoru}</p>
+                
+            </div>
+        ))}
+    </div>
+    </div>
+        
+</main>
+</>
+)
+}
