@@ -19,7 +19,7 @@ const PORT = 3000
 
 app.get("/api/main", async (req,res)=>{
     try{
-        const result = await pool.query("SELECT * from newsone OFFSET 1")
+        const result = await pool.query("SELECT * from newsone ORDER BY id OFFSET 1")
         res.json(result.rows)
     }
     catch(error){
@@ -28,7 +28,7 @@ app.get("/api/main", async (req,res)=>{
 })
 app.get("/api/main2", async (req,res)=>{
     try{
-        const result = await pool.query("SELECT * from newsone LIMIT 1")
+        const result = await pool.query("SELECT * from newsone ORDER BY id LIMIT 1")
         res.json(result.rows[0])
     }
     catch(error){
