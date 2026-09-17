@@ -58,19 +58,27 @@ return (
                 <p>{item.titlemain}</p>
                 <p>{item.categoru}</p>
                  <div className={classes.To_Meta_Info_2}>
-                <div>
-                        <p><img src={Photo.like} alt="" />{item.like}K</p>
-                        <p><img src={Photo.rep} alt="" />{item.repost}</p>
-                </div>
+                    <div>
+                            <p><img src={Photo.like} alt="" />{item.like}K</p>
+                            <p><img src={Photo.rep} alt="" />{item.repost}</p>
+                    </div>
                     <div className={classes.ReadMore}>
-                       
                         <button>Read More<img src={Photo.arrow} alt="" /></button>
                     </div>
                 </div>
             </div>
         ))}
     </div>
+    <div className={classes.DivFour}>
+        <div className={classes.TextFor}>
+            <p>Welcome to Our News Hub</p>
+            <p>Discover the World of Headlines</p>
+        </div>
+        <div className={classes.ReadMore}>           
+            <button>View All News<img src={Photo.arrow} alt="" /></button>
+        </div>
     </div>
+</div>
         
 </main>
 </>
