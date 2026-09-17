@@ -57,7 +57,16 @@ return (
                 <img src={item.img} alt="" />
                 <p>{item.titlemain}</p>
                 <p>{item.categoru}</p>
-                
+                 <div className={classes.To_Meta_Info_2}>
+                <div>
+                        <p><img src={Photo.like} alt="" />{item.like}K</p>
+                        <p><img src={Photo.rep} alt="" />{item.repost}</p>
+                </div>
+                    <div className={classes.ReadMore}>
+                       
+                        <button>Read More<img src={Photo.arrow} alt="" /></button>
+                    </div>
+                </div>
             </div>
         ))}
     </div>
