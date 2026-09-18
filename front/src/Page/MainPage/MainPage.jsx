@@ -9,6 +9,7 @@ import axios from "axios"
 export default function MainPage() {
     const[data,setData] = useState([])
     const[data2,setData2] = useState(null)
+    const[data3,setData3] = useState([])
     useEffect(() => {
         fetch("http://localhost:3000/api/main")
         .then(res => res.json())
@@ -18,6 +19,11 @@ export default function MainPage() {
         fetch("http://localhost:3000/api/main2")
         .then(res => res.json())
         .then(data2 => setData2(data2))
+    },[])
+    useEffect(() => {
+        fetch("http://localhost:3000/api/main3")
+        .then(res => res.json())
+        .then(data3 => setData3(data3))
     },[])
 return (
 <>
@@ -57,12 +63,59 @@ return (
                 <img src={item.img} alt="" />
                 <p>{item.titlemain}</p>
                 <p>{item.categoru}</p>
-                
+                 <div className={classes.To_Meta_Info_2}>
+                    <div>
+                            <p><img src={Photo.like} alt="" />{item.like}K</p>
+                            <p><img src={Photo.rep} alt="" />{item.repost}</p>
+                    </div>
+                    <div className={classes.ReadMore}>
+                        <button>Read More<img src={Photo.arrow} alt="" /></button>
+                    </div>
+                </div>
             </div>
         ))}
     </div>
+    <div className={classes.DivFour}>
+        <div className={classes.TextFor}>
+            <p>Welcome to Our News Hub</p>
+            <p>Discover the World of Headlines</p>
+        </div>
+        <div className={classes.ReadMore}>           
+            <button>View All News<img src={Photo.arrow} alt="" /></button>
+        </div>
     </div>
+</div>
+<section className={classes.FiveSection}>
+    <div className={classes.DivFive}>
+        {data3.map(item =>(
+            <div key={item.id} className={classes.DivFiveContainer}>
+                <div className={classes.DivFiveLeft}>
+                    <img src={item.img} alt="" />
+                    <p>{item.name}</p>
+                    <p>{item.profesia}</p>
+                </div>
+                <div className={classes.DivFiveRight}>
+                    <p>{item.Data}</p>
+                    <p>{item.title}</p>
+                    <p>{item.textnews}</p>
+                    <div className={classes.To_Meta_Info_3}>
+                        <div>
+                            <p><img src={Photo.like} alt="" />{item.like}</p>
+                            <p><img src={Photo.rep} alt="" />{item.repost}</p>
+                            <p><img src={Photo.coment} alt="" />{item.coment}</p>
+                            </div>
+                        <div className={classes.ReadMore}>
+                            <button>Read More<img src={Photo.arrow} alt="" /></button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        ))}
+    </div>
+    <div>
         
+    </div>
+</section>
 </main>
 </>
 )

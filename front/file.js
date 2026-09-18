@@ -7,7 +7,8 @@ import imageThree from '../front/public/Image3.png'
 import imageFor from '../front/public/Image4.png'
 import like from '../front/public/like.png'
 import rep from '../front/public/rep.png'
-
+import arrow from '../front/public/arrow.png'
+import coment from '../front/public/coment.png'
 
 export let Photo = {
 
@@ -17,4 +18,6 @@ export let Photo = {
     imageThree:imageThree,
     imageFor:imageFor,
     rep:rep,
+    arrow:arrow,
+    coment,coment
 }

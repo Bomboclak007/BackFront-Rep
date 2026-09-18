@@ -36,7 +36,15 @@ app.get("/api/main2", async (req,res)=>{
     }
 })
 
-
+app.get("/api/main3", async (req,res)=>{
+    try{
+        const result = await pool.query("SELECT * from peoplwork")
+        res.json(result.rows)
+    }
+    catch(error){
+        res.status(500).json({error:`Ошибка сервера : ${error.message}`})
+    }
+})
 
 
 
