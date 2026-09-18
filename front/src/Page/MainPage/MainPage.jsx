@@ -85,6 +85,7 @@ return (
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 <section className={classes.FiveSection}>
     <div className={classes.DivFive}>
         {data3.map(item =>(
@@ -113,6 +114,8 @@ return (
         ))}
     </div>
     <div>
+=======
+>>>>>>> 5993f36aab7fb611948a4a2f6c4ae9b34ef31e7b
         
     </div>
 </section>
