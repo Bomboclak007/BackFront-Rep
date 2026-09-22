@@ -115,3 +115,48 @@ VALUES
  'The Future of Autonomous Vehicles',
  'An in-depth analysis of the rapid advancements in autonomous vehicles',
  '32K', 18, 72, '\Sarah.png');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE public.peoplwork (
+    id integer NOT NULL,
+    name character varying NOT NULL,
+    profesia character varying,
+    Data character varying,
+    title character varying,
+    textnews character varying,
+    like character varying,
+    repost character varying,
+    coment character varying,
+    img character varying,
+    CONSTRAINT peoplwork_pk PRIMARY KEY (id)
+);
