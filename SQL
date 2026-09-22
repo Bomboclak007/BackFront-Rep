@@ -75,3 +75,43 @@ VALUES
      14,
      '204',
      '\Image.png');
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE posts (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    profesia VARCHAR(100),
+    Data DATE,
+    title VARCHAR(255),
+    textnews TEXT,
+    like_count VARCHAR(20),
+    repost INT,
+    coment INT,
+    img VARCHAR(255)
+);
+
+INSERT INTO posts
+(id, name, profesia, Data, title, textnews, like_count, repost, coment, img)
+VALUES
+(1, 'John Techson', 'Technology', '2023-10-15',
+ 'Tech Giants Announce New Product Line',
+ 'Explore the latest innovations from tech industry leaders',
+ '24.5K', 20, 50, '\John.png'),
+
+(3, 'Astronomer X', 'Technology', '2023-12-10',
+ 'Tech Giants Secure Record Funding',
+ 'An overview of the recent surge in funding for tech companies',
+ '20K', 12, 31, '\AstroX.png'),
+
+(2, 'Sarah Ethicist', 'Technology', '2023-10-11',
+ 'The Future of Autonomous Vehicles',
+ 'An in-depth analysis of the rapid advancements in autonomous vehicles',
+ '32K', 18, 72, '\Sarah.png');
