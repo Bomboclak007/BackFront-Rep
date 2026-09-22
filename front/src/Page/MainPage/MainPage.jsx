@@ -85,39 +85,64 @@ return (
         </div>
     </div>
 </div>
-<<<<<<< HEAD
+
 <section className={classes.FiveSection}>
+    <div className={classes.ButtonFive}>
+        <div className= {classes.ButtonElements}>
+        <div>
+            <p>All</p>
+        </div>
+        <div>
+            <p>Technology</p>
+        </div>
+        <div>
+            <p>Politics</p>
+        </div>
+        <div>
+            <p>Health</p>
+        </div>
+        <div>
+            <p>Environment</p>
+        </div>
+        <div>
+            <p>Sports</p>
+        </div>
+        </div>
+
+    </div>
     <div className={classes.DivFive}>
         {data3.map(item =>(
             <div key={item.id} className={classes.DivFiveContainer}>
                 <div className={classes.DivFiveLeft}>
-                    <img src={item.img} alt="" />
-                    <p>{item.name}</p>
-                    <p>{item.profesia}</p>
-                </div>
-                <div className={classes.DivFiveRight}>
-                    <p>{item.Data}</p>
-                    <p>{item.title}</p>
-                    <p>{item.textnews}</p>
-                    <div className={classes.To_Meta_Info_3}>
+                    <div className={classes.Beta}>
+                        <img src={item.img} alt="" />
                         <div>
-                            <p><img src={Photo.like} alt="" />{item.like}</p>
-                            <p><img src={Photo.rep} alt="" />{item.repost}</p>
-                            <p><img src={Photo.coment} alt="" />{item.coment}</p>
+                            <p>{item.name}</p>
+                            <p>{item.profesia}</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div className={classes.DivFiveRight}>
+                        <div className={classes.Beta2}>
+                            <p>{item.Data}</p>
+                            <p>{item.title}</p>
+                            <p>{item.textnews}</p>
+                            <div className={classes.To_Meta_Info_3}>
+                                <div>
+                                    <p><img src={Photo.like} alt="" />{item.like}</p>
+                                    <p><img src={Photo.rep} alt="" />{item.repost}</p>
+                                    <p><img src={Photo.coment} alt="" />{item.coment}</p>
+                                </div>
                             </div>
+                        </div>
+                        
                         <div className={classes.ReadMore}>
                             <button>Read More<img src={Photo.arrow} alt="" /></button>
                         </div>
-                    </div>
-                </div> 
-            </div>
-        ))}
-    </div>
-    <div>
-=======
->>>>>>> 5993f36aab7fb611948a4a2f6c4ae9b34ef31e7b
-        
-    </div>
+                    </div> 
+             </div>
+            ))}
+        </div>
 </section>
 </main>
 </>

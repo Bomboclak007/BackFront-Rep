@@ -8,10 +8,7 @@ import imageFor from '../front/public/Image4.png'
 import like from '../front/public/like.png'
 import rep from '../front/public/rep.png'
 import arrow from '../front/public/arrow.png'
-<<<<<<< HEAD
 import coment from '../front/public/coment.png'
-=======
->>>>>>> 5993f36aab7fb611948a4a2f6c4ae9b34ef31e7b
 
 export let Photo = {
 
@@ -22,8 +19,5 @@ export let Photo = {
     imageFor:imageFor,
     rep:rep,
     arrow:arrow,
-<<<<<<< HEAD
     coment,coment
-=======
->>>>>>> 5993f36aab7fb611948a4a2f6c4ae9b34ef31e7b
 }
