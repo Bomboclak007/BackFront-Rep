@@ -46,8 +46,25 @@ app.get("/api/main3", async (req,res)=>{
     }
 })
 
+app.get("/api/main4", async (req,res)=>{
+    try{
+        const result = await pool.query('SELECT * from "FeaturedVideos" ')
+        res.json(result.rows)
+    }
+    catch(error){
+        res.status(500).json({error:`Ошибка сервера : ${error.message}`})
+    }
+})
 
-
+app.get("/api/main5", async (req,res)=>{
+    try{
+        const result = await pool.query('SELECT * from "footer" ')
+        res.json(result.rows)
+    }
+    catch(error){
+        res.status(500).json({error:`Ошибка сервера : ${error.message}`})
+    }
+})
 
 app.listen(PORT,()=>{
     console.log(`Сервер запущен на порте ${PORT}`)

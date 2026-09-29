@@ -1,0 +1,128 @@
+.TechRevolutionSection{
+    width: 100%;
+    height: 119vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+    .TechRevolution{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 803px;
+        .DivTech{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 1596px;
+            height: 600px;
+            .DivTechUp{
+                display: flex;
+                justify-content: center;
+                width: 1596px;
+                height: 217px;
+                .DivTechUpLeft{
+                    width: 230px;
+                    height: 217px;
+                }
+                .DivTechUpRight{
+                    width: 1366px;
+                    height: 217px;
+                    
+                    div:first-child{
+                        color: #FFFFFF;
+                        background-color: #333333;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 250px;
+                        height: 42px;
+                        font-size: 22px;
+                        border-radius: 6px;
+
+                        p{
+                            color: #FFFFFF;
+                            font-size: 22px;
+                        }
+                    }
+                    p:nth-child(2){
+                        font-size: 58px;
+                        color: #FFFFFF;
+                    }
+                    p:last-child{
+                        height: 56;
+                        font-size: 18px;
+                        color: #7E7E81;
+                    }
+                }
+            }
+            .DivTechDown{
+                width: 1506px;
+                height: 246px;
+                background-color: #141414;
+                border-radius: 12px;
+                 border: 1px solid #262626;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .DivBack{
+                     display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 480px;
+                    height: 206px;
+                    background-color: #1A1A1A;
+                    border: 1px solid #262626;
+                    border-radius: 12px;
+                    .Up{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 422px;
+                        height: 52px;
+                        p{
+                            font-size: 22px;
+                        color: #FFFFFF;
+                        }
+                        img{
+                             width: 52px;
+                        height: 52px;
+                        }
+                    }
+                    .Down{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 425px;
+                        height: 54px;
+                        p{
+                            font-size: 18px;
+                        color: #98989A;
+                        }
+                    }
+                }
+                // div{
+                //     display: flex;
+                //     justify-content: center;
+                //     width: 505px;
+                //     height: 206px;
+                //     background-color: #1A1A1A;
+                //     border-radius: 12px;
+
+                //     p:first-child{
+                //         font-size: 22px;
+                //         color: #FFFFFF;
+                //     }
+                //     img:nth-child(2){
+                //         width: 52px;
+                //         height: 52px;
+                //     }
+                //     p:last-child{
+                //         font-size: 18px;
+                //         color: #98989A;
+                //     }
+                // }
+
+            }
+        }
+    }
+}

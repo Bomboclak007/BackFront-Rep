@@ -5,11 +5,13 @@ import { Link, useFetcher } from 'react-router-dom'
 import { use } from "react"
 import { useEffect } from "react"
 import axios from "axios"
-
+import TechRevolution from "../../Common/TechRevolution/TechRevolution"
 export default function MainPage() {
     const[data,setData] = useState([])
     const[data2,setData2] = useState(null)
     const[data3,setData3] = useState([])
+    const[data4,setData4] = useState([])
+
     useEffect(() => {
         fetch("http://localhost:3000/api/main")
         .then(res => res.json())
@@ -24,6 +26,11 @@ export default function MainPage() {
         fetch("http://localhost:3000/api/main3")
         .then(res => res.json())
         .then(data3 => setData3(data3))
+    },[])
+        useEffect(() => {
+        fetch("http://localhost:3000/api/main4")
+        .then(res => res.json())
+        .then(data4 => setData4(data4))
     },[])
 return (
 <>
@@ -142,8 +149,25 @@ return (
                     </div> 
              </div>
             ))}
-        </div>
+    </div>
+   
 </section>
+ <div className={classes.DivSix}>
+        {data4.map(item => (
+            <div key={item.id} className={classes.SixContainer}>
+                <div className={classes.SixUp}>
+                    <div className={classes.ImgUp}>
+                        <img src={item.img} alt="" />
+                    </div>
+                    <div>
+                        <p>{item.maintitle}</p>
+                        <p>{item.title}</p>
+                    </div>
+                </div>
+            </div>
+        ))} 
+    </div>
+        <TechRevolution/>
 </main>
 </>
 )
