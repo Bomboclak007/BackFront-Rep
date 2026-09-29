@@ -12,11 +12,11 @@ export default function MainPage() {
     const[data3,setData3] = useState([])
     const[data4,setData4] = useState([])
 
-    useEffect(() => {
+`    useEffect(() => {
         fetch("http://localhost:3000/api/main")
         .then(res => res.json())
         .then(data => setData(data))
-    },[])
+    },[])`
     useEffect(() => {
         fetch("http://localhost:3000/api/main2")
         .then(res => res.json())
