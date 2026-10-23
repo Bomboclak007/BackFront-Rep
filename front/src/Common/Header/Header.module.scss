@@ -8,12 +8,40 @@
 header{
     width: 100%;    
     height: auto;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     display: flex;
     align-items: center;
     flex-direction: column;
+        background: #1A1A1A;
+
+        
+    border-bottom: 1px solid #333333;
+
+    .headerMusorLine{
+        width: 100%;
+        height: auto;
+        min-height: 70px;
+        background: #141414;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-bottom: 1px solid #333333;
+        .SubscribeLine{
+            color: #98989A;
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
     .headerBlockTop{
-        width: 50%;
+        width: 80%;
 
 
 
@@ -22,23 +50,30 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
             .logoPhoto{
-
+                width: auto;
+                height: 100%;
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
             }
             .nav{
-                width: 60%;
+                width: 40%;
                 display: flex;
                 justify-content: space-between; 
                 align-items: center;
-
+                
 
                
                 a{
                     text-decoration: none;
-                    text-transform: uppercase;
+
                     font-family: "Roboto Mono", monospace;
-
-
+                        
+                    color: #98989A;
                     width: 13vh;
                     height: 6vh;
                     border: none;
@@ -49,20 +84,50 @@ header{
                    
                 }
                 .active{
-                      color:#ff0000 !important;
+                    width: 140px;
+                    height: 55px;
+
+                    outline: none;
+                    cursor: pointer;
+
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #141414; 
+                    border-radius: 12px;
+                    border-color: #ff0000;
+                    border-width: 500px;
+
+                    color: #FFFFFF;
+                    font-family: sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    transition: background 0.2s ease;
+
+
+
+                    border: 1px solid #333333;
+
                     }
                 a:hover{    
-                    color: #E7BEB1;
+                    color: #ffffff;
                 }
-                .ConectUs{
-
-                    width: 13vh;
-                    height: 6vh;
-                    border: none;
-
-                }
+       
             }
-            
+            .ConectUs{
+                width: 140px;
+                height: 55px;
+                border-radius: 10px;
+                background: #FFD11A;
+                    cursor: pointer;
+                    display: inline-block;
+                    text-decoration: none;
+                    text-align: center;
+                transition: background-color 0.2s ease;
+                    outline: none;
+                    border: none;
+                    font-weight: 700;
+            }
         }
         
     }

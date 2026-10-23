@@ -12,11 +12,11 @@ export default function MainPage() {
     const[data3,setData3] = useState([])
     const[data4,setData4] = useState([])
 
-`    useEffect(() => {
+    useEffect(() => {
         fetch("http://localhost:3000/api/main")
         .then(res => res.json())
         .then(data => setData(data))
-    },[])`
+    },[])
     useEffect(() => {
         fetch("http://localhost:3000/api/main2")
         .then(res => res.json())
@@ -24,7 +24,7 @@ export default function MainPage() {
     },[])
     useEffect(() => {
         fetch("http://localhost:3000/api/main3")
-        .then(res => res.json())
+        .then(res => res.json())    
         .then(data3 => setData3(data3))
     },[])
         useEffect(() => {
@@ -35,7 +35,7 @@ export default function MainPage() {
 return (
 <>
 <main>
-
+    
     <div className={classes.container}>
         {data2 && (
         <div key={data2.id} className={classes.TwoDiv}>
@@ -65,7 +65,7 @@ return (
         </div>
     )}
         <div className={classes.DivThree}>
-        {data.map(item =>(
+        {/* {data.map(item =>(
             <div key={item.id}>
                 <img src={item.img} alt="" />
                 <p>{item.titlemain}</p>
@@ -80,19 +80,23 @@ return (
                     </div>
                 </div>
             </div>
-        ))}
+        ))} */}
     </div>
-    <div className={classes.DivFour}>
-        <div className={classes.TextFor}>
-            <p>Welcome to Our News Hub</p>
-            <p>Discover the World of Headlines</p>
-        </div>
-        <div className={classes.ReadMore}>           
-            <button>View All News<img src={Photo.arrow} alt="" /></button>
-        </div>
-    </div>
-</div>
 
+<section className={classes.DiscoverTheWorld}>
+    <div className={classes.DivCenter}>
+        <div className={classes.DiscoverTheWorldLeft}>
+            <div className={classes.DivText}>
+                Welcome to Our News Hub</div>
+                <p className={classes.MainText}>Discover the 
+                World of Headlines</p>
+        </div> 
+        <div className={classes.DiscoverTheWorldRight}>
+            <img src={Photo.Button2} alt="" />
+        </div>
+    </div>
+</section>
+</div>
 <section className={classes.FiveSection}>
     <div className={classes.ButtonFive}>
         <div className= {classes.ButtonElements}>

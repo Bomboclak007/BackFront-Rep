@@ -30,7 +30,7 @@ background-color: #141414;
 }
 .container{
     width: 99vw;
-    height: 110vh;
+    height: 190vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,40 +216,47 @@ background-color: #141414;
                   }
                   }
               }
-          }
-            .DivFour{
-            width: 100%;
-            height: 373px;
+          } 
+    }
+
+    .DiscoverTheWorld{
+        background: #1A1A1A;
+        width: 100%;
+        height: 40vh;
+        border-bottom: 2px solid #262626; /* Добавит сплошную рамку толщиной 2px */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .DivCenter{
+            width: 65%;
+            height: 45%;
             display: flex;
-            background-color: #f8f8f8;    
-            .TextFor{
-                p:first-child{
+            justify-content: space-between;
+            align-items: center;
+            .DiscoverTheWorldLeft{
+                width: auto;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                flex-direction: column;
+                .DivText{
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    font-weight: 500;
+                    background: #333333;
+                    padding: 2%;
+                    border-radius: 4px;
                 }
-                p:last-child{
+                .MainText{
+                    color: #FFFFFF;
+                    font-size: 58px;
+                    font-weight: 300;
                 }
             }
-            .ReadMore{
-            }
-        }  
-    }
-
-    .DivFour{
-    width: 100%;
-    height: 373px;
-    display: flex;
-    background-color: #f8f8f8;    
-    .TextFor{
-        p:first-child{
-
-        }
-        p:last-child{
-
         }
     }
-    .ReadMore{
 
-    }
-}
 }
 .FiveSection{
     width: 99vw;

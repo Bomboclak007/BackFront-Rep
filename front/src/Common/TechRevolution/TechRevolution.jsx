@@ -43,7 +43,6 @@ export default function TechRevolution(){
                             </div>
                         </div>
                     ))}
-
                 </div>
             </div>
         </div>

@@ -1,0 +1,388 @@
+ 
+ 
+ .BackImage{
+    background-image: url(../../../../public/docto.png);
+    width: 99%;
+    height: 598px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    p{
+        color: white;
+        font-size: 64px;
+    }
+ }
+
+    .DivText{
+        background-color: #141414;
+        display: flex;
+        width: 100%;
+        min-height: 1026px;
+        border-bottom: 1px solid  #262626;
+                border-top: 1px solid  #262626;
+
+        .right{
+            width: 1238px;
+            border-right: 1px solid #262626;
+            border-bottom: 1px solid  #262626;
+            min-height: 1026px;
+            .Bot2 {
+                position: relative;
+                max-width: 1000px;
+                margin: 0 auto;
+                color: #ddd;
+                background: #141414;
+
+                .content {
+                    position: relative;
+                    max-height: 320px;
+                    overflow: hidden;
+                    transition: max-height 1s ease;
+                    p:first-child{
+                        font-size: 28px;
+                        color: #FFFFFF;
+                    }
+                    p:last-child{
+                        font-size: 18px;
+                        color: #98989A;
+                    }
+                    &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 140px;
+                    background: linear-gradient(to bottom, transparent, #141414);
+                    pointer-events: none;
+                    }
+
+                    &.expanded {
+                    max-height: 800px; // с запасом, больше реальной высоты текста
+
+                    &::after {
+                        display: none;
+                    }
+                    }
+                }
+
+                .ReadMore {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 12px;
+                    transform: translateX(-50%);
+                    padding: 8px 20px;
+                    color: #fff;
+                    background: #1c1c1c;
+                    border: 1px solid #333;
+                    border-radius: 999px;
+                    cursor: pointer;
+
+                    // в раскрытом состоянии кнопка идёт под текстом, а не поверх него
+                    &.ReadMoreOpen {
+                        position: static;
+                        display: block;
+                        transform: none;
+                        margin: 16px auto;
+                    }
+                }
+                }
+            .Top{
+                width: 1238px;
+                height: 285px;
+                display: flex;
+                justify-content: center;
+                align-items:center ;
+                border-bottom: 1px solid  #262626;
+                .Text{
+                    width: 996px;
+                    height: 111px;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    p:first-child{
+                        color: white;
+                        font-size: 20px;
+                    }
+                    p:last-child{
+                        width: 752px;
+                        display: flex;
+                        color: #98989A;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .Bot{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .Text2{
+                    width: 996px;
+                    height: 360px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    align-content: space-around;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    p:first-child{
+                        color: #FFFFFF;
+                        font-size: 28px;
+                    }
+                    p:nth-child(2){
+                        color: #98989A;
+                        font-size: 18px;
+                    }
+                    p:last-child{
+                        color: #98989A;
+                        font-size: 18px;        
+                    }
+                }
+            }
+        }
+        .left{
+            
+            width: 628px;
+            height: 1026px;
+            .Top{
+                width: 682px;
+                height: 154px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                            border-bottom: 1px solid  #262626;
+
+                    .To_Meta_Info_3{
+                        width: 682px;
+                        height: 40%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        div{
+                            width: 300px;
+                            height: 50px;
+                            
+                            display: flex;
+                            justify-content: space-between;
+                            p{
+                                width: 87px;
+                                height: 43px;
+                                font-size: 18px;
+                                border-radius: 50px;
+                                background-color: #1A1A1A;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #98989A;
+                                border: 1px solid #262626;
+                            }   
+                        }
+                        
+                    }
+            }
+            .Bot{
+                width: 682px;
+                height: 854px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .TopBot{
+                    width: 682px;
+                    height: 180px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .DivMy{
+                    width: 420px;
+                    height: 158px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    
+                    p:first-child{
+                        height: 65px;
+                        width: 210px;
+                        justify-content: space-evenly;
+                        display: flex;
+                        flex-direction: column;
+                        color: #98989A;
+                        font-size: 18px;
+                        text-align: left;
+                        span{
+                            font-size: 18px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    p:nth-child(2){
+                        height: 65px;
+                        width: 210px;
+                        justify-content: space-evenly;
+                        display: flex;
+                        flex-direction: column;
+                        color: #98989A;
+                        font-size: 18px;
+                        text-align: left;
+
+                        span{
+                            font-size: 18px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    p:nth-child(3){
+                        height: 65px;
+                        width: 210px;
+                        justify-content: space-evenly;
+                        display: flex;
+                        flex-direction: column;
+                        color: #98989A;
+                        text-align: left;
+
+                        font-size: 18px;
+                        span{
+                            font-size: 18px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    p:last-child{
+                        height: 65px;
+                        width: 210px;
+                        justify-content: space-evenly;
+                        display: flex;
+                        flex-direction: column;
+                        color: #98989A;
+                        font-size: 18px;
+                        text-align: left;
+                        span{
+                            font-size: 18px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                }
+                .BotBot{
+                    width: 440px;
+                    height: 486px;
+                    display: flex;
+                        .Spisok{
+                            p{
+                                height: 40px;
+                            font-size: 18px;
+                            color: #98989A;
+                        }
+                    }
+                        .DivUl{
+                            background-color: #1A1A1A;
+                            width: 490px;
+                            height: 410px;
+                            display: flex;
+                            justify-content: center;
+                            border-radius: 10px;
+                        ul{
+                            color: #FFFFFF;
+                            font-size: 18px;
+                            width: 390px;
+                            height: 390px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ 
+ .DivThree{
+            background-color: #141414;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 60px 0px 0 0px; 
+            width: 100%;
+            height: 587px;
+            border-top: 1px solid #262626;
+            div{
+                p:nth-child(2){
+                    font-size: 25px;
+                    color: white;
+                }
+                p:nth-child(3){
+                    font-size: 20px;
+                    color: #98989A;
+                }
+            }
+            .ImageTwo{
+                display: flex;
+                width: 512px;
+                height: 395px;
+                img{
+                    width: 512px;
+                    height: 222px;
+                }
+            }
+            .ImageThree{
+                display: flex;
+                width: 512px;
+                height: 395px;
+                img{
+                    width: 512px;
+                    height: 222px;
+                }
+            }
+            .ImageFor{
+                display: flex;
+                width: 512px;
+                height: 395px;
+                img{
+                    width: 512px;
+                    height: 222px;
+                }
+            }
+        .To_Meta_Info_2{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div{
+                    width: 188px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        width: 87px;
+                        height: 43px;
+                        font-size: 18px;
+                        border-radius: 50px;
+                        background-color: #1A1A1A;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #98989A;
+                        border: 1px solid #262626;
+                    }
+                }
+                .ReadMore{
+                  width: 277px;
+                button{
+                    width: 277px;
+                    height: 63px;
+                    background-color: #141414;
+                    border-radius: 15px;
+                    color: #98989A;
+                    border: 1px solid #262626;
+                    font-size: 18px;
+                    img{
+                        transform: translate(8px, 6px);
+                    width: 24px;
+                    height: 24px;
+                  }
+                  }
+              }
+          } 
+    }

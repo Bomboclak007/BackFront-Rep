@@ -12,6 +12,11 @@ import SubContainer2 from '../front/public/SubContainer2.png'
 import SubContainer3 from '../front/public/SubContainer3.png'
 import SubContainer4 from '../front/public/SubContainer4.png'
 import Logo from '../front/public/Logo.png'
+import twiter from '../front/public/twiter.png'
+import coundclaud from '../front/public/coundclaud.png'
+import insta from '../front/public/insta.png'
+import Button2 from '../front/public/Button2.png'
+import docto from '../front/public/docto.png'
 
 export let Photo = {
 
@@ -27,7 +32,11 @@ export let Photo = {
     SubContainer2:SubContainer2,
     SubContainer3:SubContainer3,
     SubContainer4:SubContainer4,
-    Logo:Logo
-
+    Logo:Logo,
+    twiter:twiter,
+    coundclaud:coundclaud,
+    insta:insta,
+    Button2:Button2,
+    docto:docto,
 
 }
